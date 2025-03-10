@@ -6,8 +6,8 @@
     color: var(--col2);
     padding: 10px 21px;
     font-family: var(--font2);
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .hero-btn:hover {
@@ -24,7 +24,6 @@
     flex-direction: row;
     padding: 8px 18px;
     width: max-content;
-    font-size: 20px;
     letter-spacing: 1px;
 }
 
