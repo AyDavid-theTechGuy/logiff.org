@@ -9,7 +9,7 @@ footer.innerHTML = `
                 </a>
                 <h5>Lineage of Grace Initiative For Family</h5>
                 <p>
-                    Lineage of Grace Initiative For Family is a nonprofit organiztion dedicated to the education, empowerment and soso of people towards a healthier society.
+                    Lineage of Grace Initiative For Family is a nonprofit organiztion dedicated to the education and empowerment of people towards a healthier society.
                 </p>
             </div>
 
