@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap");
+@import "buttons.css";
+@import "cards.css";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box !important;
+}
+
+body {
+	overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--col1: #0f0f0f;
+	--col2: #fff;
+    --col3: #f500dc;
+    --col4: #910187;
+	--font1: "Montserrat", sans-serif;
+	--font2: "Sora", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font1);
+	font-weight: 500;
+}
+
+p, ul, a {
+	font-family: var(--font1);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Navbar Style */
+
+.navbar {
+	margin: 0 auto;
+	background-color: var(--col2);
+	z-index: 9;
+}
+
+.navbar .container-fluid {
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+@media screen and (max-width: 629px) {
+	.navbar .container-fluid {
+        padding-left: 32px;
+        padding-right: 32px;
+	}
+}
+
+@media screen and (max-width: 431px) {
+	.navbar .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+	}
+}
+
+.nav-link,
+.navbar-brand {
+	color: var(--col1) !important;
+	cursor: pointer;
+}
+
+.navbar-brand img {
+	width: auto;
+    height: 54px;
+}
+
+.navbar-brand p {
+    color: var(--col4);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 368px) {
+	.navbar-brand img {
+        width: auto;
+        height: 42px;
+    }
+    
+    .navbar-brand p {
+        font-size: 14px;
+    }
+}
+
+.nav-link {
+	font-family: var(--font1);
+	font-size: 16px;
+	padding: 0px 3px 0px 3px;
+	margin-right: 15px;
+}
+
+.nav-link:hover {
+	text-decoration: underline solid 1px var(--col1);
+}
+
+.nav-item.ct .nav-link {
+    background: linear-gradient(45deg, var(--col3), var(--col4));
+    color: var(--col2) !important;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-item.ct .nav-link:hover {
+    background-color: var(--col1);
+    color: var(--col2);
+    text-decoration: underline solid 1px var(--col2);
+    transition: 0.25s;
+    opacity: 0.87;
+}
+
+/* navbarToggler Appearance */
+
+@media screen and (max-width: 991px) {
+	.navbar-nav {
+		margin-top: 10px;
+	}
+
+	.nav-link {
+		padding-left: 10px;
+	}
+    
+    .nav-item {
+		padding-bottom: 7px;
+	}
+}
+
+
+/* HERO */
+
+.hero {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/hands-together.jpg);
+    background-size: cover;
+    background-position: center;
+	color: var(--col1);
+	font-family: var(--font1);
+}
+
+.hero .container-fluid {
+    padding: 0 54px;
+}
+
+.hero-lt h1 {
+    font-size: 54px;
+	font-weight: 600;
+}
+
+/*
+@media (min-width: 992px) and (max-width: 1030px) {
+    .navbar-link {
+        font-size: 5px;
+    }
+    
+    .hero-lt h1 {
+        font-size: 22px;
+    }
+}
+*/
+
+.hero-lt p {
+    font-size: 22px;
+}
+
+.hero-rt img {
+    width: 78%;
+}
+
+@media screen and (max-width: 1115px) {
+	.hero-lt h1 {
+        font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.hero .row {
+        flex-direction: column-reverse;
+	}
+    
+    .hero-rt {
+        margin-left: auto;
+    }
+    
+    .hero-rt img {
+        width: 42%;
+    }
+    
+    .hero-lt {
+        padding-bottom: 54px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 716px) {
+	.hero-lt h1 {
+        font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 562px) {
+    .hero .container-fluid {
+        padding: 0 21px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero-lt {
+        width: 100%;
+    }
+    
+	.hero-lt h1 {
+        font-size: 28px;
+	}
+    
+    .hero-lt p {
+        font-size: 16px;
+	}
+    
+    .hero-lt a {
+        font-size: 15px;
+	}
+}
+
+/* WHO WE ARE Section */
+
+.who-we-are {
+    background-color: var(--col2);
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+/* OUR VISION Section */
+
+.our-vision {
+    background-color: var(--col1);
+    color: var(--col2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.our-vision p {
+    width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+	.our-vision p {
+        width: 80%;
+    }
+}
+
+
+/* GALLERY Section */
+
+.gallery {
+    background-color: var(--col2);
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+
+/* BLOG Section */
+
+.blog {
+    background-color: var(--col2);
+    padding-bottom: 24px;
+}
+
+
+/* Footer */
+
+footer {
+	background: linear-gradient(45deg, var(--col3), var(--col4));
+	color: var(--col2);
+}
+
+footer p,
+footer ul li a,
+footer .social a i {
+	font-family: var(--font1);
+    color: var(--col2);
+}
+
+footer ul li a:hover {
+	text-decoration: underline solid 1px var(--col2);
+    transition: 0.5s;
+}
+
+footer .social a i:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+footer hr {
+    width: 87%;
+}
+
+.copyright,
+.copyright a{
+    color: var(--col5);
+	font-family: var(--font1);
+    font-size: 15px;
+}
+
+.copyright a {
+	text-decoration: underline solid 1px var(--col2);
+    transition: 0.5s;
+}
+
+
+/* OTHER PAGES */
+
+.page-heading {
+	background-color: var(--col1);
+}
+
+.page-heading h1 {
+	color: var(--col2);
+}
+
+.page-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page-content.aop p:nth-child(1) {
+    border-left: solid 2px var(--col4);
+}
+
+/* Contact Form */
+
+.form-sub {
+	display: flex;
+	flex-direction: column;
+}
+
+form input,
+form textarea {
+	background-color: var(--col3);
+	color: var(--col5);
+	border: solid 1px var(--col2);
+	border-radius: 5px;
+	font-family: var(--font1);
+	padding: 5px 10px;
+	width: 50%;
+}
+
+@media screen and (max-width: 562px) {
+	form input,
+	form textarea {
+		width: 93%;
+	}
+}
+
+form input:focus,
+form textarea:focus {
+	outline: 2px solid var(--col7);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+	color: var(--col5);
+	opacity: 0.5;
+	font-family: var(--font1);
+}
+
+form label {
+	font-family: var(--font2);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/* Lazy Loading Effects */
+
+.need-an-answer h1 {
+    opacity: 0;
+    transform: translateY(-25px); 
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.ll-img {
+    opacity: 0;
+    transform: translateY(25px); 
+    transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.need-an-answer h1.visible,
+.ll-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
