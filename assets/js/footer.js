@@ -4,8 +4,8 @@ footer.innerHTML = `
     <div class="container">
         <div class="row pb-4">
             <div class="col-lg-5 col-md-12 text">
-                <a class="navbar-brand" href="https://logiff.org/">
-                    <span><img src="./assets/img/logo-white.png"></span>
+                <a href="https://logiff.org/">
+                    <span><img src="./assets/img/logo-white.png" style="height: 72px; width: auto;"></span>
                 </a>
                 <h5>Lineage of Grace Initiative For Family</h5>
                 <p>
@@ -53,7 +53,7 @@ footer.innerHTML = `
         </div>
     </div>
     <hr class="mx-auto" />
-    <div class="text-center copyright pt-2 pb-3">
+    <div class="text-center copyright pt-2 pb-3 px-3">
         © Copyright 2025,
         <a href="https://logiff.org/" class="link"
             >Lineage of Grace Initiative For Family</a

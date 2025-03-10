@@ -33,21 +33,21 @@
 
 @media screen and (max-width: 386px) {
 	.card--1 {
-        width: 240px;
+        width: 270px;
 	}
 }
 
 /* Card 2 */
 
 .card--2 {
-	margin: 0 21px 35px 21px;
-	padding: 16px 24px;
+	margin: 0 12px 35px 12px;
+	padding: 16px 12px;
     width: 320px;
 }
 
 .card--2 img {
 	border-radius: 7px;
-    width: 97%;
+    width: 100%;
 }
 
 .card--2 h5 {
@@ -62,7 +62,7 @@
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     display: flex;
-/*     margin: 0 24px 21px 24px; */
+    margin: 0 24px 21px 24px;
     width: 270px;
 }
 
